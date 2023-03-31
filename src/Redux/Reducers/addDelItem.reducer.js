@@ -15,7 +15,7 @@ export const addDelItem = (state = initialState, action) => {
     case DELETE_ITEM:
       return {
         ...state,
-        items: state.items.filter((item) => item.id !== action.payload),
+        items: state.items.filter((item) => item.id !== action.payload.id),
       };
     default:
       return state;

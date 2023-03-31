@@ -22,19 +22,21 @@ const AddItem = () => {
   };
 
   return (
-    <div>
-      <form className="" onSubmit={submitHandler}>
-        <Button
-          text="Add Item"
-          bgcolor="#0DB0D9"
-          color="white"
-          onclick={() => dispatch(addItem(name))}
-        />
+    <div className="left-[53%] mt-2">
+      <form className="flex gap-2" onSubmit={submitHandler}>
+        <div className="">
+          <Button
+            text="Add Item"
+            bgcolor="#0DB0D9"
+            color="white"
+            onclick={() => dispatch(addItem(name))}
+          />
+        </div>
         <div>
           <input
             type="text"
             placeholder="Enter Item"
-            className="mt-3 "
+            className="rounded-md mt-1"
             onChange={showItem}
             value={name}
           />

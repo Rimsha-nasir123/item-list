@@ -5,7 +5,6 @@ const Button = ({
   bgcolor,
   text,
   bgHoverColor,
-
   size,
   color,
   onclick,
@@ -18,7 +17,7 @@ const Button = ({
         backgroundColor: bgcolor,
         color,
       }}
-      className={`text-${size} hover:bg-${bgHoverColor} px-1 p-2 rounded-md hover:shadow-lg`}
+      className={`text-${size} hover:bg-${bgHoverColor} p-1 rounded-md hover:shadow-lg`}
     >
       {icon} {text}
     </button>

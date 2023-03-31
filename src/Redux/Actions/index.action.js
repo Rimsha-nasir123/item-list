@@ -8,15 +8,17 @@ export const decNumber = (num) => ({
   type: "DECREMENT",
   payload: num,
 });
-export const addItem = (text) => ({
+export const addItem = (id) => ({
   type: "ADD_ITEM",
   payload: {
-    name : text
-  }
+    name: id,
+  },
 });
-export const delItem = (item) => {
+export const delItem = (id) => {
   return {
     type: "DELETE_ITEM",
-    payload: item,
+    payload: {
+      id: id,
+    },
   };
 };
